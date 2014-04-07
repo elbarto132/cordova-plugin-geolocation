@@ -133,7 +133,7 @@
     if (enableHighAccuracy) {
         __highAccuracyEnabled = YES;
         // Set to distance filter to "none" - which should be the minimum for best results.
-        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.distanceFilter = 5;
         // Set desired accuracy to Best.
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     } else {
